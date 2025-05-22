@@ -1,34 +1,32 @@
-# projet-code-wallet
+Présentation
+Code Wallet est une application desktop développée avec Electron, React, et Vite, conçue pour aider les développeurs à stocker, organiser et retrouver facilement leurs fragments de code favoris.
 
-An Electron application with React
-
-## Recommended IDE Setup
-
-- [VSCode](https://code.visualstudio.com/) + [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) + [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
-
-## Project Setup
-
-### Install
-
-```bash
-$ npm install
-```
-
-### Development
-
-```bash
-$ npm run dev
-```
-
-### Build
-
-```bash
-# For windows
-$ npm run build:win
-
-# For macOS
-$ npm run build:mac
-
-# For Linux
-$ npm run build:linux
-```
+Fonctionnalités
+Gestion des fragments
+Ajouter un fragment avec un titre, un code source, et des tags personnalisés.
+Modifier un fragment existant.
+Supprimer un fragment.
+Visualiser le fragment dans une modale avec coloration syntaxique (Prism.js).
+Recherche et filtrage
+Recherche instantanée par titre, contenu du code, ou tags.
+Filtrage par tags cliquables dans la liste et dans la modale.
+Affichage de la liste des tags avec compteur du nombre de fragments associés.
+Filtrage avancé pour afficher uniquement les fragments favoris.
+Gestion des tags
+Ajout de tags en saisissant dans le formulaire (avec gestion de tags multiples).
+Edition et suppression globale des tags depuis la page Tags.
+Les tags sont interactifs et permettent de filtrer les fragments correspondants.
+Favoris
+Marquer/démarquer un fragment comme favori.
+Filtrer pour afficher uniquement les favoris.
+Import / Export
+Exporter l’ensemble des fragments dans un fichier JSON.
+Importer un fichier JSON valide pour restaurer ou ajouter des fragments.
+Synchronisation automatique des données importées dans la base locale JSON.
+Dark Mode
+Basculement clair/sombre via un bouton dans le header.
+Styles adaptés pour toutes les pages, boutons, modales et fragments.
+Coloration syntaxique adaptée en dark mode.
+Tests unitaires
+Couverture des fonctions de gestion des tags (parseTags, filterFragmentsByTag) avec Jest.
+Test facile à lancer avec npm test.
