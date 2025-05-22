@@ -1,4 +1,5 @@
 💼 Présentation
+
 Code Wallet est une application desktop moderne développée avec Electron, React et Vite, conçue pour aider les développeurs à stocker, organiser et retrouver rapidement leurs fragments de code favoris. Simple, rapide et élégante, elle centralise tous vos snippets dans une interface efficace et personnalisable.
 
 ✨ Fonctionnalités
