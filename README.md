@@ -1,80 +1,58 @@
-# 💼 Code Wallet
+💼 Présentation
+Code Wallet est une application desktop moderne développée avec Electron, React et Vite, conçue pour aider les développeurs à stocker, organiser et retrouver rapidement leurs fragments de code favoris. Simple, rapide et élégante, elle centralise tous vos snippets dans une interface efficace et personnalisable.
 
-**Code Wallet** est une application desktop moderne développée avec **Electron**, **React** et **Vite**. Elle est conçue pour aider les développeurs à **stocker**, **organiser** et **retrouver rapidement** leurs fragments de code favoris. Simple, rapide et élégante, elle centralise tous vos snippets dans une interface efficace et personnalisable.
+✨ Fonctionnalités
+🧩 Gestion des fragments
+Ajouter un fragment avec :
 
----
+Un titre
 
-## ✨ Fonctionnalités
+Un code source
 
-### 🧩 Gestion des fragments
+Des tags personnalisés
 
-- Ajouter un fragment avec :
-  - Un **titre**
-  - Un **code source**
-  - Des **tags personnalisés**
-- Modifier ou supprimer un fragment existant.
-- Affichage des fragments dans une **modale** avec **coloration syntaxique** grâce à **Prism.js**.
+Modifier ou supprimer un fragment existant.
 
----
+Affichage des fragments dans une modale avec coloration syntaxique (Prism.js).
 
-### 🔍 Recherche & filtrage
+🔍 Recherche & filtrage
+Recherche instantanée sur le titre, le contenu du code ou les tags.
 
-- **Recherche instantanée** sur :
-  - Le titre
-  - Le contenu du code
-  - Les tags
-- **Filtrage par tags** cliquables dans la liste et les modales.
-- Affichage de la **liste des tags** avec compteur d’occurrence.
-- **Filtrage avancé** pour afficher uniquement les fragments marqués comme favoris.
+Filtrage par tags cliquables dans la liste et dans les modales.
 
----
+Affichage de la liste des tags avec un compteur indiquant le nombre de fragments associés.
 
-### 🏷️ Gestion des tags
+Filtrage avancé pour afficher uniquement les fragments marqués comme favoris.
 
-- Ajout de tags via le formulaire (prise en charge des **tags multiples**).
-- **Édition** et **suppression globale** des tags depuis la page "Tags".
-- Tags interactifs pour un **filtrage rapide** des fragments associés.
+🏷️ Gestion des tags
+Ajout de tags via le formulaire, avec prise en charge de tags multiples.
 
----
+Édition et suppression globale des tags depuis la page "Tags".
 
-### ⭐ Favoris
+Les tags sont interactifs : un clic permet de filtrer instantanément les fragments associés.
 
-- Marquer ou dé-marquer un fragment comme **favori**.
-- Affichage filtré pour visualiser uniquement les favoris.
+⭐ Favoris
+Marquer ou dé-marquer un fragment comme favori.
 
----
+Affichage filtré pour ne voir que les fragments favoris.
 
-### 🔄 Import / Export
+🔄 Import / Export
+Exporter l’ensemble des fragments dans un fichier JSON.
 
-- **Exporter** tous les fragments au format **JSON**.
-- **Importer** un fichier JSON valide pour restaurer ou ajouter des fragments.
-- Synchronisation automatique avec la base locale JSON (via Lowdb ou Node-json-db).
+Importer un fichier JSON valide pour restaurer ou ajouter des fragments.
 
----
+Les données importées sont synchronisées automatiquement avec la base locale (Lowdb ou Node-json-db).
 
-### 🌙 Mode sombre
+🌙 Mode sombre
+Bascule clair/sombre via un bouton dans le header.
 
-- Bascule clair/sombre via un bouton dans le header.
-- Thèmes adaptés à tous les éléments : listes, boutons, modales, fragments.
-- **Coloration syntaxique dynamique** selon le thème choisi.
+Thème appliqué à toute l’interface : listes, boutons, modales, fragments.
 
----
+Coloration syntaxique adaptée au thème en cours.
 
-### 🧪 Tests unitaires
+🧪 Tests unitaires
+Tests Jest pour les fonctions critiques :
 
-- Tests Jest pour les fonctions de gestion de tags :
-  - `parseTags`
-  - `filterFragmentsByTag`
-- Lancement des tests avec :
+parseTags
 
-```bash
-npm test
-📂 Démarrage rapide
-bash
-Copier
-Modifier
-# Installation des dépendances
-npm install
-
-# Lancement du projet en développement
-npm run dev
+filterFragmentsByTag
