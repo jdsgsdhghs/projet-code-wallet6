@@ -57,3 +57,6 @@ Tests Jest pour les fonctions critiques :
 parseTags
 
 filterFragmentsByTag
+
+
+

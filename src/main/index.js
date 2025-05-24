@@ -14,7 +14,7 @@ function createWindow() {
     autoHideMenuBar: true,
     ...(process.platform === 'linux' ? { icon } : {}),
     webPreferences: {
-      preload: join(__dirname, '../preload/index.js'),
+      preload: join(__dirname, '../preload/index.j'),
       sandbox: false
     }
   })
@@ -106,6 +106,7 @@ app.whenReady().then(() => {
     });
     db.write();
   });
+   //ltnfdsnvjdfk:,:kd
   ipcMain.on('delete-fragment', (event, id) => {
     db.read(); // Recharge la base
     db.data.fragments = db.data.fragments.filter(fragment => fragment.id !== id); // Supprime
