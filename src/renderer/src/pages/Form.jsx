@@ -42,8 +42,8 @@ function Form() {
     };
 
     // Envoi via le bridge electron (préload.js)
-    if (window.electronAPI?.sendFragment) {
-      window.electronAPI.sendFragment(fragment);
+    if (window.api?.sendFragment) {
+      window.api.sendFragment(fragment);
       navigate('/fragments'); // Redirige vers la liste des fragments
     } else {
       console.error('electronAPI non disponible');
