@@ -51,12 +51,6 @@ Thème appliqué à toute l’interface : listes, boutons, modales, fragments.
 
 Coloration syntaxique adaptée au thème en cours.
 
-🧪 Tests unitaires
-Tests Jest pour les fonctions critiques :
-
-parseTags
-
-filterFragmentsByTag
 
 
 
